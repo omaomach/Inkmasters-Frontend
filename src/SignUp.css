@@ -25,7 +25,7 @@ body {
 .right {
   width: 1025px;
   height: 850px;
-  background-color: #701517;
+  background-color: lightgrey;
   margin-left: 25px;
   border-radius: 12px;
   display: flex;
@@ -42,7 +42,7 @@ body {
 .art-text p {
   font-size: x-large;
   font-style: italic;
-  color: #701517;
+  color: #000000;
   font-family: 'Snell Roundhand, cursive';
 }
 
@@ -50,13 +50,13 @@ body {
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
-    color: #ffffff;
+    color: #000000;
     font-style: italic;
     font-family: 'Snell Roundhand, cursive';
 }
 
 .sign-up-components {
-  background-color: #701517;
+  background-color: lightgrey;
   width: 500px;
   height: 500px;
   margin-left: auto;
@@ -77,15 +77,15 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid seagreen;
+  border: 1px solid #000000;
 }
 .signup {
   width: 200px;
   height: 35px;
-  border: 1px solid lightseagreen;
-  background: seagreen;
+  border: 1px solid #000000;
+  background: #000000;
   cursor: pointer;
-  color: whitesmoke;
+  color: #ffffff;
   margin-top: 12px;
   margin-bottom: 10px;
   border-radius: 12px;
@@ -93,7 +93,7 @@ body {
 
 .login-text {
     margin-left: 80%;
-    color: #ffffff;
+    color: #000000;
     font-style: italic;
     font-family: 'Snell Roundhand, cursive';
 }
