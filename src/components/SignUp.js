@@ -19,7 +19,7 @@ function SignUp() {
                 <div className="sign-up-components">
 
                 <div className="sign-up-header">
-                    <h3>Hello, please Sign Up to Access Inkmasters</h3>
+                    <h3>Hello, please sign up to access Inkmasters</h3>
                 </div>
 
                     <input type="text" className="username" placeholder="Username"/>
