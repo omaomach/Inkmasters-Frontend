@@ -1,0 +1,44 @@
+body {
+    background-color: #ffffff;
+}
+
+.main-parent {
+    height: 850px;
+    width: 1750px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 700px;
+    height: 850px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.right {
+    width: 1025px;
+    height: 850px;
+    background-color: #8B4513;
+    margin-left: 25px;
+    border-radius: 12px;
+}
+
+.atlas {
+    max-width: 700px;
+    max-height: 770px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.art-text p {
+    font-size: x-large;
+    font-style: italic;
+    color: grey;
+}
