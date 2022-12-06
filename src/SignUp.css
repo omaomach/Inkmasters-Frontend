@@ -1,44 +1,99 @@
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .main-parent {
-    height: 850px;
-    width: 1750px;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: row;
+  height: 850px;
+  width: 1750px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
 }
 
 .left {
-    width: 700px;
-    height: 850px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    text-align: center;
+  width: 700px;
+  height: 850px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .right {
-    width: 1025px;
-    height: 850px;
-    background-color: #8B4513;
-    margin-left: 25px;
-    border-radius: 12px;
+  width: 1025px;
+  height: 850px;
+  background-color: #701517;
+  margin-left: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .atlas {
-    max-width: 700px;
-    max-height: 770px;
-    border-radius: 12px;
-    margin-top: 25px;
+  max-width: 700px;
+  max-height: 765px;
+  border-radius: 12px;
+  margin-top: 25px;
 }
 
 .art-text p {
-    font-size: x-large;
+  font-size: x-large;
+  font-style: italic;
+  color: #701517;
+  font-family: 'Snell Roundhand, cursive';
+}
+
+.sign-up-header {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
     font-style: italic;
-    color: grey;
+    font-family: 'Snell Roundhand, cursive';
+}
+
+.sign-up-components {
+  background-color: #701517;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sign-up-components input {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid seagreen;
+}
+.signup {
+  width: 200px;
+  height: 35px;
+  border: 1px solid lightseagreen;
+  background: seagreen;
+  cursor: pointer;
+  color: whitesmoke;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.login-text {
+    margin-left: 80%;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Snell Roundhand, cursive';
 }

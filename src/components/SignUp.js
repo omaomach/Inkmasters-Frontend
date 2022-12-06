@@ -15,14 +15,21 @@ function SignUp() {
                 </div>
             </div>
             <div className="right">
-                <div className="sign-up-header">
-
-                </div>
+                
                 <div className="sign-up-components">
 
+                <div className="sign-up-header">
+                    <h3>Hello, please Sign Up to Access Inkmasters</h3>
+                </div>
+
+                    <input type="text" className="username" placeholder="Username"/>
+                    <input type="text" className="email" placeholder="Email"/>
+                    <input type="text" className="password" placeholder="Password"/>
+                    <input type="text" className="password" placeholder="Password Confirmation"/>
+                    <button className="signup">Sign Up</button>
                 </div>
                 <div className="login-text">
-
+                <p>Already a member? Login</p>
                 </div>
             </div>
         </div>
