@@ -4,7 +4,7 @@
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -35,7 +35,16 @@
 .artist-components {
     width: 1350px;
     height: 810px;
-    background-color: lightgrey;
+    border: 1.5px solid #000000;  
+    background-color: gray;
     border-radius: 12px;
-    margin-left: 50px;
+    margin-left: 5px;
+    
+}
+
+.home-cards {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }

@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import Search from "./Search";
 import "../Home.css";
 import atlas4 from '../assets/atlas4.jpg'
+import ArtistCard from "./ArtistCard";
 
 function Home() {
   return (
@@ -19,6 +20,9 @@ function Home() {
         </div>
         <div className="artist-components">
             <Search />
+            <div className="home-cards">
+                <ArtistCard />
+            </div>
         </div>
       </div>
     </>

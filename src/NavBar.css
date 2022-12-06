@@ -1,16 +1,16 @@
 .navbar {
-    background-color: lightgrey;
+    background-color: #ffffff;
     height: 75px;
     width: 1800px;
     border-radius: 12px;
-    margin-top: 25px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     margin-left: 20px;
 }
 
 .inkmasters {
-    margin-left: 25px;
+    margin-left: 255px;
 }
 
 .inkmasters h1{
@@ -22,7 +22,7 @@
 .nav-components {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 950px;
+    margin-left: 720px;
 }
 
 .nav-buttons {
