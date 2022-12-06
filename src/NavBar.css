@@ -1,0 +1,40 @@
+.navbar {
+    background-color: lightgrey;
+    height: 75px;
+    width: 1800px;
+    border-radius: 12px;
+    position: fixed;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.inkmasters {
+    margin-left: 25px;
+}
+
+.inkmasters h1{
+    font-style: italic;
+    font-family: 'Snell Roundhand, cursive';
+    color: #000000;
+}
+
+.nav-components {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 950px;
+}
+
+.nav-buttons {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #000000;
+    background: #000000;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-right: 25px;
+    font-style: italic;
+    font-family: 'Snell Roundhand, cursive';
+  }
