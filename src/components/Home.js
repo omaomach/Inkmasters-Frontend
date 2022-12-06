@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "./NavBar";
 import Search from "./Search";
 import "../Home.css";
 import atlas4 from '../assets/atlas4.jpg'
 import ArtistCard from "./ArtistCard";
+import NavBar from "./NavBar";
 
 function Home() {
   return (
     <>
-      <NavBar />
+    <NavBar />
       <div className="home-parent">
         <div className="home-left">
             <div className="awesome-image">

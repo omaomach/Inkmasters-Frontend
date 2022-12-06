@@ -1,5 +1,6 @@
 import React from "react";
 import '../NavBar.css'
+import { NavLink } from 'react-router-dom'
 
 function NavBar() {
 
@@ -7,13 +8,14 @@ function NavBar() {
 
         <div className="navbar">
             <div className="inkmasters">
-                <h1>Inkmasters</h1>
+                <NavLink to="/"><h1>Inkmasters</h1></NavLink>
             </div>
 
             <div className="nav-components">
-                <button className="nav-buttons">Home</button>
-                <button className="nav-buttons">About</button>
-                <button className="nav-buttons">Contact Us</button>
+                <NavLink to="/"><button className="nav-buttons">Home</button></NavLink>
+                <NavLink to="/about"><button className="nav-buttons">About</button></NavLink>
+                <NavLink to="/contacts"><button className="nav-buttons">Contact Us</button></NavLink>
+                <NavLink to="/logout"><button className="nav-buttons">Logout</button></NavLink>
             </div>
 
         </div>
