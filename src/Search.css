@@ -1,0 +1,19 @@
+.artist-filters {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: lightgrey;
+    width: 700px;
+    text-align: center;
+}
+
+.filters {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #000000;
+    background: #000000;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-right: 25px;
+  }

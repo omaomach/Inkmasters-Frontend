@@ -1,0 +1,41 @@
+.home-parent {
+    height: 850px;
+    width: 1750px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-left {
+    width: 500px;
+    height: 700px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+.atlas {
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 12px;
+    margin-top: 25px;
+  }
+  
+.art-text p {
+    font-size: x-large;
+    font-style: italic;
+    color: #000000;
+    font-family: 'Snell Roundhand, cursive';
+}
+
+.artist-components {
+    width: 1350px;
+    height: 700px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    /* margin-left: 100px; */
+}
