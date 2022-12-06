@@ -24,6 +24,7 @@ function SignUp() {
 
                     <input type="text" className="username" placeholder="Username"/>
                     <input type="text" className="email" placeholder="Email"/>
+                    <input type="text" className="phone_number" placeholder="Phone Number"/>
                     <input type="text" className="password" placeholder="Password"/>
                     <input type="text" className="password" placeholder="Password Confirmation"/>
                     <button className="signup">Sign Up</button>
