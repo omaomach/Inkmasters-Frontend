@@ -1,6 +1,7 @@
 import React from "react";
 import '../SignUp.css'
 import atlas3 from '../assets/atlas3.jpg'
+import { NavLink } from 'react-router-dom'
 
 function SignUp() {
 
@@ -30,7 +31,7 @@ function SignUp() {
                     <button className="signup">Sign Up</button>
                 </div>
                 <div className="login-text">
-                <p>Already a member? Login</p>
+                <NavLink to='/login'><p>Already a member? Login</p></NavLink>
                 </div>
             </div>
         </div>

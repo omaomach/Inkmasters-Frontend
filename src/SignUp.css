@@ -97,3 +97,7 @@ body {
     font-style: italic;
     font-family: 'Snell Roundhand, cursive';
 }
+
+.login-text a {
+  text-decoration: none;
+}

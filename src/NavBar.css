@@ -10,7 +10,7 @@
 }
 
 .inkmasters {
-    margin-left: 255px;
+    margin-left: 230px;
 }
 
 .inkmasters h1{
@@ -22,7 +22,7 @@
 .nav-components {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 495px;
+    margin-left: 275px;
 }
 
 .nav-buttons {
@@ -36,4 +36,8 @@
     margin-right: 25px;
     font-style: italic;
     font-family: 'Snell Roundhand, cursive';
-  }
+}
+
+.navbar a {
+    text-decoration: none;
+}

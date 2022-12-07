@@ -97,4 +97,8 @@ body {
       font-style: italic;
       font-family: 'Snell Roundhand, cursive';
   }
+
+  .sign-up-text a {
+    text-decoration: none;
+  }
   
