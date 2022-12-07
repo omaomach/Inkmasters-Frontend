@@ -35,8 +35,8 @@
 .artist-components {
     width: 1350px;
     height: 810px;
-    border: 1.5px solid #000000;  
-    background-color: gray;
+    /* border: 1.5px solid #000000;   */
+    background-color: grey;
     border-radius: 12px;
     margin-left: 5px;
     

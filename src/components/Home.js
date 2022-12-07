@@ -1,19 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Search from "./Search";
 import "../Home.css";
 import atlas4 from '../assets/atlas4.jpg'
 import ArtistCard from "./ArtistCard";
 import NavBar from "./NavBar";
-import {  useNavigate } from 'react-router-dom'
+// import {  useNavigate } from 'react-router-dom'
 
 function Home({ client, setClient }) {
-  const navigate = useNavigate()
 
-  if (localStorage.getItem("me")){
-    navigate("/")
-  }else {
-    navigate("/login")
+  const [artists, setArtists] = useState([])
+  const [filter, setFilter] = useState("")
+
+  // const navigate = useNavigate()
+
+  // if (localStorage.getItem("me")){
+  //   navigate("/")
+  // }else {
+  //   navigate("/login")
+  // }
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:3000/artists")
+      .then((r) => r.json())
+      .then((artists) => setArtists(artists));
+  }, []);
+
+  let FilteredArtists = artists.filter((artist) => {
+    let result = artist.name === filter
+    return result
+  })
+
+  const clearFilter = () => {
+    setFilter("")
   }
+
+  const newArr = filter ? FilteredArtists : artists
+
+  // const artist = artists.map((art) => {
+  //   return art.email
+  // })
 
   return (
     <>
@@ -28,10 +53,12 @@ function Home({ client, setClient }) {
             </div>
         </div>
         <div className="artist-components">
-            <Search />
-            <div className="home-cards">
-                <ArtistCard />
-            </div>
+            <Search filter={filter} onSetFilter={setFilter} onClearFilter={clearFilter} artists={artists}/>
+            {newArr.map((artist) => (
+              <div className="home-cards" key={artist.id}>
+              <ArtistCard artist={artist}/>
+          </div>
+            ))}
         </div>
       </div>
     </>

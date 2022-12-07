@@ -47,7 +47,7 @@ function Login({ setClient }) {
                 </div>
                 <form onSubmit={handleSubmit}>
                     <input type="text" id="username" className="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)}/>
-                    <input type="text" id="password" className="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" id="password" className="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                     <button className="sign-in" type="submit">Login</button>
                 </form>
                 </div>

@@ -56,10 +56,10 @@ function SignUp({ setClient }) {
                 </div>
                 <form onSubmit={handleSubmit}>
                     <input type="text" id="username" className="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)}/>
-                    <input type="text" id="email" className="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
-                    <input type="text" id="phone_number" className="phone_number" placeholder="Phone Number" onChange={(e) => setPhone_Number(e.target.value)}/>
-                    <input type="text" id="password" className="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
-                    <input type="text" id="password_confirmation" className="password" placeholder="Password Confirmation" onChange={(e) => setPasswordConfirmation(e.target.value)}/>
+                    <input type="email" id="email" className="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="number" id="phone_number" className="phone_number" placeholder="Phone Number" onChange={(e) => setPhone_Number(e.target.value)}/>
+                    <input type="password" id="password" className="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" id="password_confirmation" className="password" placeholder="Password Confirmation" onChange={(e) => setPasswordConfirmation(e.target.value)}/>
                     <button className="signup" type="submit">Sign Up</button>
                 </form>
                 </div>
