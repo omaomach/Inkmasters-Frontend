@@ -6,18 +6,30 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from './components/About';
 import ContactUs from './components/ContactUs';
 import Artist from './components/Artist';
+import { useState, useEffect } from 'react'
 
 function App() {
+
+  const [client, setClient] = useState(null)
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:3000/me").then((response) => {
+      if (response.ok) {
+        response.json().then((client) => setClient(client));
+      }
+    });
+  }, []);
+
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home client={client} setClient={setClient}/>} />
         <Route path='/logout' element={<Login />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<ContactUs />} />
         <Route path='/artist' element={<Artist />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login setClient={setClient}/>} />
+        <Route path='/signup' element={<SignUp setClient={setClient}/>} />
       </Routes>
     </Router>
 

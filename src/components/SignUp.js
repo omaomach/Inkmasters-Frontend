@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import '../SignUp.css'
 import atlas3 from '../assets/atlas3.jpg'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-function SignUp() {
+
+function SignUp({ setClient }) {
+    const navigate = useNavigate()
+    const [username, setUsername] = useState("");
+    const [phone_number, setPhone_Number] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("http://127.0.0.1:3000/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            phone_number,
+            email,
+            password,
+            password_confirmation: passwordConfirmation,
+          }),
+        }).then((r) => {
+          if (r.ok) {
+            r.json().then((client) => {
+                setClient(client)
+                navigate('/')
+            });
+          }
+        });
+    }
 
     return (
         <div className="main-parent">
@@ -22,13 +53,14 @@ function SignUp() {
                 <div className="sign-up-header">
                     <h3>Hello, please sign up to access Inkmasters</h3>
                 </div>
-
-                    <input type="text" className="username" placeholder="Username"/>
-                    <input type="text" className="email" placeholder="Email"/>
-                    <input type="text" className="phone_number" placeholder="Phone Number"/>
-                    <input type="text" className="password" placeholder="Password"/>
-                    <input type="text" className="password" placeholder="Password Confirmation"/>
-                    <button className="signup">Sign Up</button>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" id="username" className="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)}/>
+                    <input type="text" id="email" className="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="text" id="phone_number" className="phone_number" placeholder="Phone Number" onChange={(e) => setPhone_Number(e.target.value)}/>
+                    <input type="text" id="password" className="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="text" id="password_confirmation" className="password" placeholder="Password Confirmation" onChange={(e) => setPasswordConfirmation(e.target.value)}/>
+                    <button className="signup" type="submit">Sign Up</button>
+                </form>
                 </div>
                 <div className="login-text">
                 <NavLink to='/login'><p>Already a member? Login</p></NavLink>

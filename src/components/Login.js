@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import '../Login.css'
 import atlas3 from '../assets/atlas3.jpg'
 import { NavLink } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 
-function Login() {
+function Login({ setClient }) {
+    const navigate = useNavigate()
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("http://127.0.0.1:3000/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        }).then((r) => {
+          if (r.ok) {
+            r.json().then((client) => {
+                setClient(client)
+                navigate("/")
+            });
+          }
+        });
+    }
 
     return (
         <div className="main-parent">
@@ -22,10 +44,11 @@ function Login() {
                 <div className="sign-in-header">
                     <h3>Hello, please login to access Inkmasters</h3>
                 </div>
-
-                    <input type="text" className="username" placeholder="Username"/>
-                    <input type="text" className="password" placeholder="Password"/>
-                    <button className="sign-in">Login</button>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" id="username" className="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)}/>
+                    <input type="text" id="password" className="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <button className="sign-in" type="submit">Login</button>
+                </form>
                 </div>
                 <div className="login-text">
                 <NavLink to='/signup'><p>Already a member? Sign Up</p></NavLink>
