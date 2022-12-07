@@ -5,10 +5,10 @@ import atlas4 from '../assets/atlas4.jpg'
 import ArtistCard from "./ArtistCard";
 import NavBar from "./NavBar";
 
-function Home() {
+function Home({ client, setClient }) {
   return (
     <>
-    <NavBar />
+    <NavBar client={client} setClient={setClient}/>
       <div className="home-parent">
         <div className="home-left">
             <div className="awesome-image">

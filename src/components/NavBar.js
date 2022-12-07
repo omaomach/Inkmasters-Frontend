@@ -1,8 +1,18 @@
 import React from "react";
 import '../NavBar.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-function NavBar() {
+
+function NavBar({ client, setClient }) {
+    const navigate = useNavigate()
+    function handleLogoutClick() {
+        fetch("http://127.0.0.1:3000/logout", { method: "DELETE" }).then((r) => {
+          if (r.ok) {
+            setClient(null);
+            navigate('/login')
+          }
+        });
+    }
 
     return (
 
@@ -16,7 +26,8 @@ function NavBar() {
                 <NavLink to="/artist"><button className="nav-buttons">Designs</button></NavLink>
                 <NavLink to="/about"><button className="nav-buttons">About</button></NavLink>
                 <NavLink to="/contacts"><button className="nav-buttons">Contact Us</button></NavLink>
-                <NavLink to="/logout"><button className="nav-buttons">Logout</button></NavLink>
+                <NavLink to="/logout"><button className="nav-buttons" onClick={handleLogoutClick}>Logout</button></NavLink>
+                
             </div>
 
         </div>
