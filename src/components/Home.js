@@ -4,8 +4,17 @@ import "../Home.css";
 import atlas4 from '../assets/atlas4.jpg'
 import ArtistCard from "./ArtistCard";
 import NavBar from "./NavBar";
+import {  useNavigate } from 'react-router-dom'
 
 function Home({ client, setClient }) {
+  const navigate = useNavigate()
+
+  if (localStorage.getItem("me")){
+    navigate("/")
+  }else {
+    navigate("/login")
+  }
+
   return (
     <>
     <NavBar client={client} setClient={setClient}/>

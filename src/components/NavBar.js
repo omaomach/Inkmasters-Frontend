@@ -10,6 +10,7 @@ function NavBar({ client, setClient }) {
           if (r.ok) {
             setClient(null);
             navigate('/login')
+            localStorage.removeItem("me")
           }
         });
     }

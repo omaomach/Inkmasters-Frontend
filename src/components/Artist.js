@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import '../Artist.css'
 
 function Artist() {
 
@@ -7,7 +8,7 @@ function Artist() {
         <>
         <NavBar />
         <div className="artist-parent">
-            <div className="left">
+            <div className="artist-left">
                 <div className="top-left">
 
                 </div>
@@ -21,12 +22,12 @@ function Artist() {
 
             </div>
 
-            <div className="right">
+            <div className="artist-right">
                 <div className="artist-details">
 
                 </div>
-                <div className="create-appontment">
-
+                <div className="create-appointment">
+                    <button className="appointment-button">Create Appointment</button>
                 </div>
 
             </div>

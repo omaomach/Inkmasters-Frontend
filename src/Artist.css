@@ -1,0 +1,83 @@
+.artist-parent {
+    background-color: #ffffff;
+    width: 1750px;
+    height: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist-left {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 840px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top-left {
+    width: 800px;
+    height: 500px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.bottom-left {
+    width: 950px;
+    height: 300px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.artist-right {
+    width: 500px;
+    height: 840px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-details {
+    width: 300px;
+    height: 500px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.create-appointment {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: grey;
+    border-radius: 12px;
+}
+
+.appointment-button {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #000000;
+    background: #000000;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 12px;
+    font-style: italic;
+    font-family: 'Snell Roundhand, cursive';
+}
+
+

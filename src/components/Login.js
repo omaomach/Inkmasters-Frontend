@@ -22,6 +22,7 @@ function Login({ setClient }) {
             r.json().then((client) => {
                 setClient(client)
                 navigate("/")
+                localStorage.setItem("me", JSON.stringify(client))
             });
           }
         });

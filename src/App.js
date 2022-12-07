@@ -23,13 +23,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home client={client} setClient={setClient}/>} />
         <Route path='/logout' element={<Login />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<ContactUs />} />
         <Route path='/artist' element={<Artist />} />
         <Route path='/login' element={<Login setClient={setClient}/>} />
         <Route path='/signup' element={<SignUp setClient={setClient}/>} />
+        <Route path='/' element={<Home client={client} setClient={setClient}/>} />
       </Routes>
     </Router>
 
