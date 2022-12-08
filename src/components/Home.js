@@ -21,7 +21,7 @@ function Home({ client, setClient }) {
       navigate("/login")
     }
 
-    fetch("http://127.0.0.1:3000/artists")
+    fetch("https://inkmasters-production.up.railway.app/artists")
       .then((r) => r.json())
       .then((artists) => setArtists(artists));
   }, []);

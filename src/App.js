@@ -13,7 +13,7 @@ function App() {
   const [client, setClient] = useState(null)
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/me").then((response) => {
+    fetch("https://inkmasters-production.up.railway.app/me").then((response) => {
       if (response.ok) {
         response.json().then((client) => setClient(client));
       }
