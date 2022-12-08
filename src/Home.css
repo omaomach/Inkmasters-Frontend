@@ -39,12 +39,14 @@
     background-color: grey;
     border-radius: 12px;
     margin-left: 5px;
+
     
 }
 
 .home-cards {
     display: flex;
     flex-direction: row;
-    display: flex;
-    flex-direction: row;
+    margin-top: 20px;
+    background-color: grey;
+    display: inline-block;
 }

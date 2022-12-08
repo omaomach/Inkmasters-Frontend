@@ -1,18 +1,23 @@
+
 .artist-card {
     width: 190px;
     height: 250px;
     background-color: grey;
     border-radius: 12px;
     margin-left: 20px;
-    margin-top: 20px;
     text-align: center;
 }
 
 .artist-card img {
-    width: 190px;
-    height: 225px;
+    max-width: 190px;
+    max-height: 250px;
     border-radius: 12px;
     padding: 0;
+}
+
+h4 {
+    padding: 0;
+    margin-top: 10px;
 }
 
 

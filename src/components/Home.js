@@ -53,11 +53,11 @@ function Home({ client, setClient }) {
             </div>
         </div>
         <div className="artist-components">
-            <Search filter={filter} onSetFilter={setFilter} onClearFilter={clearFilter} artists={artists}/>
+          <Search filter={filter} onSetFilter={setFilter} onClearFilter={clearFilter} artists={artists}/>
             {newArr.map((artist) => (
               <div className="home-cards" key={artist.id}>
               <ArtistCard artist={artist}/>
-          </div>
+            </div>
             ))}
         </div>
       </div>
