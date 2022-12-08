@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../ArtistCard.css'
 
 function ArtistCard({ artist }) {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     // console.log(artist.email)
 
     return (

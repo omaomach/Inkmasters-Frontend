@@ -1,71 +1,60 @@
-# Getting Started with Create React App
+# Inkmasters
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Created by Joash Omao Machoka on December 8th 2022
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Lets Learn(LLearn) is an online resgister that allows event organizers e.g lecturers or anyone else who wishes to take up the role to simply create or suggest an event. Sharing the link to the event will allow users to register for the event. This allows the event organizer to keep track of who will be attending the event/meetup.
 
-### `npm start`
+## Screenshots
+The home page displays a list of all the events that the user has created for others to join or register for. It has a search for filtering 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="./src/home.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The suggest page allows the user to suggest an event that will then be added to the homepage for viewing and selecting by the site users.
 
-### `npm test`
+<img src="./src/suggest.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Link to the Website
 
-### `npm run build`
+[Lets Learn](https://gentle-praline-616eda.netlify.app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Visual Studio Code IDE
+2. Chrome Web Browser
+4. Git
+5. Github (https://github.com/omaomach/LLearn)
+6. JSON server (https://www.npmjs.com/package/json-server)
+7. NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and NPX
+8. Netlify for deploying the site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development Server
+The database for the website was run and supported by JSON server. Run json-server --watch db.json on the terminal to get the server running on port http://localhost:3000
+The backend was then deployed to heroku for consistent service.
+[Backend URL](https://murmuring-hollows-81209.herokuapp.com/events)
 
-### `npm run eject`
+## Languages Used
+* HTML 5
+* Bootstrap
+* CSS
+* Markup
+* React JS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Design Tools
+I designed the site using pencil and paper. The designs are as below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="./src/eventsandhome.jpg">
+<img src="./src/suggestdesign.jpg">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Known Bugs
+The project has no known Bugs
 
-## Learn More
+## Support and Contact Details
+In the case that the project becomes captivating to the user in that he/she may want to share ideas on how to improve it, please contact me using my github email:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* aaronjoash44@gmail.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Inkmasters-Frontend
+## License
+This project and app have no license or any copyright. They are free for use by anyone as long the usage is legal.  

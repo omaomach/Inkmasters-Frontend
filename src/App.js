@@ -31,7 +31,7 @@ function App() {
         <Route path='/login' element={<Login setClient={setClient}/>} />
         <Route path='/signup' element={<SignUp setClient={setClient}/>} />
         <Route path='/' element={<Home client={client} setClient={setClient}/>} />
-        <Route path="/artist/:artistId" element={<Artist />} />
+        <Route path="/artist/:id" element={<Artist />} />
       </Routes>
     </Router>
 
