@@ -38,7 +38,7 @@
 .bottom-left {
     width: 950px;
     height: 300px;
-    background-color: grey;
+    background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
@@ -141,6 +141,7 @@
     height: 200px;
     background-color: #000000;
     border-radius: 12px;
+    margin-left: 15px;
 }
 
 .image-card img {

@@ -1,7 +1,7 @@
 
 .artist-card {
     width: 190px;
-    height: 300px;
+    height: 320px;
     background-color: grey;
     border-radius: 12px;
     margin-left: 20px;
@@ -9,8 +9,8 @@
 }
 
 .artist-card img {
-    max-width: 190px;
-    max-height: 250px;
+    width: 190px;
+    height: 250px;
     border-radius: 12px;
     padding: 0;
 }
