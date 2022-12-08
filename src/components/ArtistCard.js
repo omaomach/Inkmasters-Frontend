@@ -8,7 +8,10 @@ function ArtistCard({ artist }) {
         <>
             <div className="artist-card" key={artist.id}>
                 <img src={artist.image} alt="artist"/>
-                <h4>Artist: {artist.name}</h4>
+                <div className="artist-text">
+                    <h4 id="artist">Artist: {artist.name}</h4>
+                    <h4>Studio: {artist.studio.name}</h4>
+                </div>
             </div>
         </>
     )

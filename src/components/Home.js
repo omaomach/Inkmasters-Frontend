@@ -10,6 +10,7 @@ function Home({ client, setClient }) {
 
   const [artists, setArtists] = useState([])
   const [filter, setFilter] = useState("")
+  const [filter2, setFilter2] = useState("")
 
   // const navigate = useNavigate()
 
@@ -25,16 +26,23 @@ function Home({ client, setClient }) {
       .then((artists) => setArtists(artists));
   }, []);
 
-  let FilteredArtists = artists.filter((artist) => {
+  let filteredArtists = artists.filter((artist) => {
     let result = artist.name === filter
     return result
   })
+
+  if (filter2) {
+    let filteredArtists =  artists.filter((artist) => {
+      let result = artist.studio.name === filter2
+      return result
+    })
+  }
 
   const clearFilter = () => {
     setFilter("")
   }
 
-  const newArr = filter ? FilteredArtists : artists
+  const newArr = filter || filter2 ? filteredArtists : artists
 
   // const artist = artists.map((art) => {
   //   return art.email
@@ -53,7 +61,7 @@ function Home({ client, setClient }) {
             </div>
         </div>
         <div className="artist-components">
-          <Search filter={filter} onSetFilter={setFilter} onClearFilter={clearFilter} artists={artists}/>
+          <Search filter={filter} onSetFilter={setFilter} filter2={filter2} onSetFilter2={setFilter2} onClearFilter={clearFilter} artists={artists}/>
             {newArr.map((artist) => (
               <div className="home-cards" key={artist.id}>
               <ArtistCard artist={artist}/>
