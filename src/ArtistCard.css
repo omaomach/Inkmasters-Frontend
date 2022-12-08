@@ -5,7 +5,6 @@
     background-color: grey;
     border-radius: 12px;
     margin-left: 20px;
-    text-align: center;
     border: 1.5px solid #000000;
 }
 
@@ -20,6 +19,8 @@
     padding: 0;
     margin-top: 5px;
     color: #000000;
+    font-style: italic;
+    font-family: 'Snell Roundhand, cursive';
 }
 
 .studio-name {
@@ -41,6 +42,10 @@
     border-radius: 12px;
     margin-top: 5px;  
     
+}
+
+.artist-card a {
+    text-decoration: none;
 }
 
 

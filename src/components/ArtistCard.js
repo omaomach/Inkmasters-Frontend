@@ -1,11 +1,14 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import '../ArtistCard.css'
 
 function ArtistCard({ artist }) {
+    const navigate = useNavigate();
     // console.log(artist.email)
 
     return (
         <>
+        <Link key={artist.id} to={`/artist/${artist.id}`}>
             <div className="artist-card" key={artist.id}>
                 <img src={artist.image} alt="artist"/>
                 <div className="artist-text">
@@ -13,6 +16,7 @@ function ArtistCard({ artist }) {
                     <h4>Studio: {artist.studio.name}</h4>
                 </div>
             </div>
+        </Link>
         </>
     )
 

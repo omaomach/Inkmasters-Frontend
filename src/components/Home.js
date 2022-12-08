@@ -4,23 +4,23 @@ import "../Home.css";
 import atlas4 from '../assets/atlas4.jpg'
 import ArtistCard from "./ArtistCard";
 import NavBar from "./NavBar";
-// import {  useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 
 function Home({ client, setClient }) {
-
   const [artists, setArtists] = useState([])
   const [filter, setFilter] = useState("")
-  const [filter2, setFilter2] = useState("")
+  // const [filter2, setFilter2] = useState("")
 
-  // const navigate = useNavigate()
-
-  // if (localStorage.getItem("me")){
-  //   navigate("/")
-  // }else {
-  //   navigate("/login")
-  // }
+  const navigate = useNavigate()
 
   useEffect(() => {
+
+    if (localStorage.getItem("me")){
+      navigate("/")
+    }else {
+      navigate("/login")
+    }
+
     fetch("http://127.0.0.1:3000/artists")
       .then((r) => r.json())
       .then((artists) => setArtists(artists));
@@ -31,18 +31,18 @@ function Home({ client, setClient }) {
     return result
   })
 
-  if (filter2) {
-    let filteredArtists =  artists.filter((artist) => {
-      let result = artist.studio.name === filter2
-      return result
-    })
-  }
+  // if (filter2) {
+  //   let filteredArtists =  artists.filter((artist) => {
+  //     let result = artist.studio.name === filter2
+  //     return result
+  //   })
+  // }
 
-  const clearFilter = () => {
-    setFilter("")
-  }
+  // const clearFilter = () => {
+  //   setFilter("")
+  // }
 
-  const newArr = filter || filter2 ? filteredArtists : artists
+  const newArr = filter ? filteredArtists : artists
 
   // const artist = artists.map((art) => {
   //   return art.email
@@ -61,7 +61,7 @@ function Home({ client, setClient }) {
             </div>
         </div>
         <div className="artist-components">
-          <Search filter={filter} onSetFilter={setFilter} filter2={filter2} onSetFilter2={setFilter2} onClearFilter={clearFilter} artists={artists}/>
+          <Search filter={filter} onSetFilter={setFilter} artists={artists}/>
             {newArr.map((artist) => (
               <div className="home-cards" key={artist.id}>
               <ArtistCard artist={artist}/>

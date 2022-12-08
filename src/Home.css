@@ -44,9 +44,9 @@
 }
 
 .home-cards {
-    display: flex;
-    flex-direction: row;
     margin-top: 20px;
     background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block;
 }
