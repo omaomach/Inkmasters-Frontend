@@ -25,7 +25,7 @@ Find a single artist card through the filter. Click the card to see the artist's
 
 View an artist's work on the Artist page
 
-<img src="./src/signup.png">
+<img src="./src/singleartist.png">
 
 ## Link to the Website
 
