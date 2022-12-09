@@ -7,6 +7,7 @@ import About from './components/About';
 import ContactUs from './components/ContactUs';
 import Artist from './components/Artist';
 import { useState, useEffect } from 'react'
+import Appointments from './components/Appointments';
 
 function App() {
 
@@ -27,11 +28,12 @@ function App() {
         <Route path='/logout' element={<Login />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<ContactUs />} />
-        <Route path='/artist' element={<Artist />} />
         <Route path='/login' element={<Login setClient={setClient}/>} />
         <Route path='/signup' element={<SignUp setClient={setClient}/>} />
         <Route path='/' element={<Home client={client} setClient={setClient}/>} />
         <Route path="/artist/:id" element={<Artist />} />
+        <Route path="/appointment/:id" element={<Appointments />} />
+        <Route path='/appointments' element={<Appointments />} />
       </Routes>
     </Router>
 

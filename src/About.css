@@ -1,0 +1,25 @@
+.about-parent {
+    height: 850px;
+    width: 1750px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.secondary-parent {
+    width: 700px;
+    height: 850px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 500px;
+    background-color: grey;
+    border-radius: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

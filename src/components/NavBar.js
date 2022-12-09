@@ -24,7 +24,7 @@ function NavBar({ client, setClient }) {
 
             <div className="nav-components">
                 <NavLink to="/"><button className="nav-buttons">Home</button></NavLink>
-                <NavLink to="/artist"><button className="nav-buttons">Designs</button></NavLink>
+                <NavLink to="/appointments"><button className="nav-buttons">My Appointments</button></NavLink>
                 <NavLink to="/about"><button className="nav-buttons">About</button></NavLink>
                 <NavLink to="/contacts"><button className="nav-buttons">Contact Us</button></NavLink>
                 <NavLink to="/logout"><button className="nav-buttons" onClick={handleLogoutClick}>Logout</button></NavLink>

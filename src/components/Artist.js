@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import '../Artist.css'
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ink1 from "../assets/ink1.jpg"
 
 function Artist() {
@@ -48,7 +48,9 @@ function Artist() {
                 </div>
                 </div>
                 <div className="create-appointment">
+                    <Link key={artist.id} to={`/appointment/${artist.id}`}>
                     <button className="appointment-button">Create Appointment</button>
+                    </Link>
                 </div>
 
             </div>
