@@ -6,10 +6,9 @@ import ArtistCard from "./ArtistCard";
 import NavBar from "./NavBar";
 import {  useNavigate } from 'react-router-dom'
 
-function Home({ client, setClient }) {
+function Home({ client, setClient, setActive }) {
   const [artists, setArtists] = useState([])
   const [filter, setFilter] = useState("")
-  // const [filter2, setFilter2] = useState("")
 
   const navigate = useNavigate()
 
@@ -50,7 +49,7 @@ function Home({ client, setClient }) {
 
   return (
     <>
-    <NavBar client={client} setClient={setClient}/>
+    <NavBar client={client} setClient={setClient} />
       <div className="home-parent">
         <div className="home-left">
             <div className="awesome-image">
@@ -64,7 +63,7 @@ function Home({ client, setClient }) {
           <Search filter={filter} onSetFilter={setFilter} artists={artists}/>
             {newArr.map((artist) => (
               <div className="home-cards" key={artist.id}>
-              <ArtistCard artist={artist}/>
+              <ArtistCard artist={artist} setActive={setActive}/>
             </div>
             ))}
         </div>

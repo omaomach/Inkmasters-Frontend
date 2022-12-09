@@ -12,6 +12,7 @@ import Appointments from './components/Appointments';
 function App() {
 
   const [client, setClient] = useState(null)
+  const [active, setActive] = useState(null)
 
   useEffect(() => {
     fetch("https://inkmasters-production.up.railway.app/me").then((response) => {
@@ -20,7 +21,7 @@ function App() {
       }
     });
   }, []);
-  console.log(client)
+  console.log(active)
 
   return (
     <Router>
@@ -30,9 +31,9 @@ function App() {
         <Route path='/contacts' element={<ContactUs />} />
         <Route path='/login' element={<Login setClient={setClient}/>} />
         <Route path='/signup' element={<SignUp setClient={setClient}/>} />
-        <Route path='/' element={<Home client={client} setClient={setClient}/>} />
+        <Route path='/' element={<Home client={client} setClient={setClient} setActive={setActive}/>} />
         <Route path="/artist/:id" element={<Artist />} />
-        <Route path="/appointment/:id" element={<Appointments />} />
+        <Route path="/appointment/:id" element={<Appointments active={active}/>} />
         <Route path='/appointments' element={<Appointments />} />
       </Routes>
     </Router>
