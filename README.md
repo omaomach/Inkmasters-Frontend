@@ -4,20 +4,32 @@
 
 ## Description
 
-Lets Learn(LLearn) is an online resgister that allows event organizers e.g lecturers or anyone else who wishes to take up the role to simply create or suggest an event. Sharing the link to the event will allow users to register for the event. This allows the event organizer to keep track of who will be attending the event/meetup.
+Inkmasters exposes licensed tattoo artists to the world. It will ensure that tattoo lovers are linked to the best artists in the business.
 
 ## Screenshots
-The home page displays a list of all the events that the user has created for others to join or register for. It has a search for filtering 
+Site members will have to login to access the site. 
 
-<img src="./src/home.png">
+<img src="./src/login.png">
 
-The suggest page allows the user to suggest an event that will then be added to the homepage for viewing and selecting by the site users.
+New members can access this page through the link on the login page. They have to sign up otherwise wont access the site.
 
-<img src="./src/suggest.png">
+<img src="./src/signup.png">
+
+The home page displays the registered artists.
+
+<img src="./src/dashboard.png">
+
+Find a single artist card through the filter. Click the card to see the artist's work and information.
+
+<img src="./src/filter.png">
+
+View an artist's work on the Artist page
+
+<img src="./src/signup.png">
 
 ## Link to the Website
 
-[Lets Learn](https://gentle-praline-616eda.netlify.app)
+[Inkmasters](https://stalwart-starship-7fb3de.netlify.app/)
 
 ## Setup Requirements
 
@@ -25,27 +37,25 @@ The suggest page allows the user to suggest an event that will then be added to 
 2. Chrome Web Browser
 4. Git
 5. Github (https://github.com/omaomach/LLearn)
-6. JSON server (https://www.npmjs.com/package/json-server)
+6. Generated Railway url for fetching 
 7. NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and NPX
 8. Netlify for deploying the site.
 
 ## Development Server
-The database for the website was run and supported by JSON server. Run json-server --watch db.json on the terminal to get the server running on port http://localhost:3000
-The backend was then deployed to heroku for consistent service.
-[Backend URL](https://murmuring-hollows-81209.herokuapp.com/events)
+I used Ruby on Rails to create the backend which was then deployed to Railway for consistent service.
+[Inkmasters Backend](https://github.com/omaomach/inkmasters-backend)
 
 ## Languages Used
 * HTML 5
-* Bootstrap
 * CSS
 * Markup
 * React JS
+* Ruby
 
 ## Design Tools
-I designed the site using pencil and paper. The designs are as below:
+I designed the site using Miro. The designs are as below:
 
-<img src="./src/eventsandhome.jpg">
-<img src="./src/suggestdesign.jpg">
+[Miro](https://miro.com/app/board/uXjVP8m1-PA=/)
 
 
 ## Known Bugs
@@ -54,7 +64,7 @@ The project has no known Bugs
 ## Support and Contact Details
 In the case that the project becomes captivating to the user in that he/she may want to share ideas on how to improve it, please contact me using my github email:
 
-* aaronjoash44@gmail.com
+[Email](aaronjoash44@gmail.com)
 
 ## License
-This project and app have no license or any copyright. They are free for use by anyone as long the usage is legal.  
+Copyright (c) 2022 Omao Machoka 

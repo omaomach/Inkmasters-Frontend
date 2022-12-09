@@ -27,7 +27,7 @@ function Artist() {
                 <div className="bottom-left">
                     {Object.keys(artist).length > 0 && artist.images.map((img) => (
                         <div className="image-card" key={img.id}>
-                            <img src={img.image_url} alt="ink" />
+                            <img src={img.image_url} alt="ink" id="img-image"/>
                         </div>
                     ))}
 
