@@ -17,7 +17,7 @@ function Appointments({ active }) {
           .then((appointment) => setAppointment(appointment));
     }, []);
 
-    console.log(appointment)
+    // console.log(appointment.client?.username)
 
     function handleChange(event) {
         const key = event.target.id
@@ -78,10 +78,13 @@ function Appointments({ active }) {
             <div className="appointment-right">
                 <div className="appointments">
                     <div className="appointment-text">
-                        <h3>Your Appointments</h3>
+                        <h2>Your Appointments</h2>
+                            <h3 key={appointment.index}>Client: {`${Object.keys(appointment).length > 0 && appointment.client?.username}`}</h3>
+                            <h3 key={appointment.index}>Appointment Type: {`${Object.keys(appointment).length > 0 && appointment?.appointment_type}`}</h3>
+                            <h3 key={appointment.index}>Appointment Time: {`${Object.keys(appointment).length > 0 && appointment?.appointment_time}`}</h3>
+                            <button className="update-button">Delete Appointment</button>
                     </div>
 
-                        {/* <li key={appointment.id}>{`${Object.keys(appointment).length > 0 && appointment.client.name}`}<button className="update-button">Delete Appointment</button></li> */}
                 </div>
             </div>
 
