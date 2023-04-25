@@ -12,7 +12,7 @@ function Appointments({ active }) {
     const [formData, setFormData] = useState(empty)
 
     useEffect(() => {
-        fetch(`https://inkmasters-production.up.railway.app/appointments/${active}`)
+        fetch(`http://127.0.0.1:3000/appointments/${active}`)
           .then((r) => r.json())
           .then((appointment) => setAppointment(appointment));
     }, []);

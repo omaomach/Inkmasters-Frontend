@@ -10,7 +10,7 @@ function Artist() {
     const [artist, setArtist] = useState([])
 
     useEffect(() => {
-        fetch(`https://inkmasters-production.up.railway.app/artists/${id}`)
+        fetch(`http://127.0.0.1:3000/artists/${id}`)
             .then((r) => r.json())
             .then((artist) => setArtist(artist))
     }, [])
